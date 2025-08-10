@@ -63,7 +63,7 @@ static void split_block(Block *block, size_t size) {
     }
 }
 
-static void coalesce() {
+static void destroy() {
     Block *current = heap_start;
 
     while (current && current->next) {
@@ -115,5 +115,5 @@ void free(void *ptr) {
         current->next = block;
     }
 
-    coalesce();
+    destroy();
 }

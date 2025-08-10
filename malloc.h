@@ -2,6 +2,7 @@
 #define MALLOC_H
 
 #include <stddef.h>
+#include <sys/types.h> 
 
 #define MIN_BLOCK_SIZE 16
 #define ALIGNMENT 8

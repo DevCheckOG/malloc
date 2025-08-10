@@ -23,9 +23,7 @@ static Block *find_free_block(size_t size) {
     Block *current = free_list;
 
     while (current) {
-        if (current->free && current->size >= size) {
-            return current;
-        }
+        if (current->free && current->size >= size) return current;
         current = current->next;
     }
 

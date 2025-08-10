@@ -1,2 +1,2 @@
 # malloc
-Tiny malloc implementation using nmap syscall at C.
+Tiny malloc implementation using mmap (Unix-like) syscall at C. 
